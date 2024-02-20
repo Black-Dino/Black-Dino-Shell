@@ -27,7 +27,7 @@ commands = {
     'help':showCommandsSection,
 
     # shell
-    'cls':'',
+    'cls':clearTerminal,
     'clear':clearTerminal,
 
     # network help menu

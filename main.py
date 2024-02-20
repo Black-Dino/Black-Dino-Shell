@@ -1,10 +1,14 @@
 from src.commands import commands
-
+from src.banner import banner
+from src.styles.colors import colors, initColors
 # while True:
 
+initColors()
 try:
+    banner()
     while True:
-        user = input('> ')
+        print()
+        user = input(colors['RED']+'> '+colors['WHITE'])
 
         # exit shell
         if user == 'exit':
