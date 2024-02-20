@@ -1,12 +1,13 @@
 from src.commands import commands
 from src.banner import banner
 from src.styles.colors import colors, initColors
-# while True:
 
+# init colors
 initColors()
 try:
-    banner()
+    banner() # show banner
     while True:
+        # get commands from user
         print()
         user = input(colors['RED']+'> '+colors['WHITE'])
 
@@ -16,6 +17,7 @@ try:
             break
 
         try:
+            # run commands
             commands[user]()
         except:
             print("wrong commands")
