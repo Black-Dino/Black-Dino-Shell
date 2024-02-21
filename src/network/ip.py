@@ -1,8 +1,14 @@
 import socket
-
+from ..styles.colors import colors
 
 def getIp():
     hostname=socket.gethostname()
     IPAddr=socket.gethostbyname(hostname)
-    print("Your Computer Name is:"+hostname)
-    print("Your Computer IP Address is:"+IPAddr)
+    ip_with_styles = colors['WHITE'] + IPAddr + colors['CYAN'] 
+    temp = f"""
++-----------------+
+| {ip_with_styles} |
++-----------------+
+    """
+    print(colors['CYAN'],temp,end='')
+    
