@@ -3,6 +3,7 @@
 # file system
 # path
 from .network.ip import getIp
+from .network.mac import getMac
 from .network.help import networkHelp
 from .shell.clear import clearTerminal
 from .help import showCommandsSection
@@ -36,5 +37,5 @@ commands = {
     'network --help':networkHelp,
     'ip':getIp,
     'ifconfig':getIp,
-    'mac':''
+    'mac':getMac
 }
