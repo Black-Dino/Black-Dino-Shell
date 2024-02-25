@@ -7,6 +7,7 @@ from .network.mac import getMac
 from .network.ping import ping
 from .network.help import networkHelp
 from .shell.clear import clearTerminal
+from .path.pwd import currentPath
 from .help import showCommandsSection
 
 path = {
@@ -39,7 +40,10 @@ commands = {
     'ip':getIp,
     'ifconfig':getIp,
     'mac':getMac,
-    'ping':'has_params'
+    'ping':'has_params',
+    
+    # path
+    'pwd':currentPath
 }
 
 commands_has_params = {
