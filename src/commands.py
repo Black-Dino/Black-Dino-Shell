@@ -4,7 +4,7 @@
 # path
 from .network.ip import getIp
 from .network.mac import getMac
-from .network.ping import pings
+from .network.ping import ping
 from .network.help import networkHelp
 from .shell.clear import clearTerminal
 from .help import showCommandsSection
@@ -43,5 +43,5 @@ commands = {
 }
 
 commands_has_params = {
-    'ping':pings
+    'ping':ping
 }
